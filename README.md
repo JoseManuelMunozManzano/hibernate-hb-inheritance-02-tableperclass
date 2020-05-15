@@ -3,6 +3,10 @@ This repository holds hibernate code example for mapping inheritance - table per
 
 A table for subclass.
 
+It's required to use the table generation strategy in the superclass.
+
+@GeneratedValue(strategy = GenerationType.TABLE)
+
 For ease of development and testing, we'll use auto configuration
 
 ```xml
